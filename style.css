@@ -95,6 +95,20 @@ padding: 15% 3%;
   padding: 10px;
 }
 
+.try-again-btn {
+  border-radius: 40px;
+  border: solid 1.5px #35465d;
+  background-color: #35465d;
+}
+
+.try-again-text {
+  display: block;
+  font-size: 1.5rem;
+  text-align: center;
+  color: #ffffff;
+  padding: 4px 15px;
+}
+
 .remove-image {
   width: 200px;
   margin: 0;
@@ -152,7 +166,16 @@ padding: 15% 3%;
 .subtitle {
     font-family: NanumSquareR;
     line-heigt: 1.53;
+    font-sizeL 1.2rem;
     text-align: center;
+    color: #35465d;
+}
+
+.sr-only {
+    font-family: NanumSquareR;
+    line-heigt: 1.53;
+    text-align: center;
+    font-sizeL 1rem;
     color: #35465d;
 }
 
@@ -166,30 +189,20 @@ padding: 15% 3%;
     }
 }
 
-.forad-link {
-    font-family: NanumSquareR;
-    font-sizeL 1.5rem;
-    line-height: 1.71;
-    text-align: center;
-    color: #f73737;
-    text-decoration: underline;
-}
-
-.forad-link:hover {
-    font-family: NanumSquareR;
-    font-sizeL 1.5rem;
-    line-height: 1.71;
-    text-align: center;
-    color: #f73737;
-    text-decoration: underline;
-}
-
-.forad-icon {
-    width: 8%;
+.forad {
+    width: 320px;
+    margin: 0 auto;
 }
 
 .ad-banner {
     width: 320px;
     margin: 0 auto;
-    
+}
+
+#label-container {
+    width: 80%;
+    margin: 0 auto;
+
+.result-message {
+    font-size: 2rem;
 }

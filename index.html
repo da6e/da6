@@ -15,14 +15,32 @@
             crossorigin="anonymous"
         />
 
-        <title>다육이 이름 찾기</title>
+        <title>다육이 이름 찾기.</title>
         <link rel="stylesheet" href="style.css" />
+
+        <script
+            type="text/javascript"
+            src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5e64b3727e862b06"
+        ></script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145482737-6"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+            gtag('config', 'UA-145482737-6');
+        </script>
     </head>
 
     <body>
         <nav class="navbar navbar-expand-lg navbar-light bg-light nav-distance">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">인공지능 다육이 이름 찾기</a>
+                <a class="navbar-brand" href="https://da6.netlify.app/"
+                    >인공지능 다육이 이름 찾기.</a
+                >
                 <button
                     class="navbar-toggler"
                     type="button"
@@ -37,8 +55,8 @@
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        <a class="nav-link" href="#">나중에 기능추가</a>
-                        <a class="nav-link" href="#">여기도 뭐넣자</a>
+                        <a class="nav-link" href="#">구피 이름 찾기 (제작중)</a>
+                        <a class="nav-link" href="#">조개 이름 찾기 (제작중)</a>
                         <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"
                             >Disabled</a
                         >
@@ -51,16 +69,28 @@
             <h1 class="title">다육이 이름 찾기</h1>
             <h2 class="subtitle">다육이 이름을 찾아드립니다!!</h2>
             <h2 class="sr-only">이름도 모르고 키우고 있는 우리집 다육이!</h2>
-            <h3 class="sr-only">인공지능으로 학습한 다육이 이름찾기 앱에서 다육이 이름을 찾아보세요.</h3>
-            
+            <h3 class="sr-only">
+                인공지능으로 학습한 다육이 이름찾기 앱에서 다육이 이름을 찾아보세요.
+            </h3>
+
             <h4 class="sr-only">사진은 어디에도 저장되지 않으니 안심하세요.</h4>
+            <h4 class="sr-only">현재 20여종의 다육이를 찾을 수 있으며 계속 학습중입니다.</h4>
         </section>
-        <section class="forad">
-            <div class="container mt-5 forad-img d-flex flex-row-reverse">
-                <img src="image/ad.png" alt="" class="forad-icon" style="width: 8%;" />
-                <a href="" class="forad-link">배너광고문의환영<</a>
-            </div>
-        </section>
+
+        <div class="forad">
+            <ins
+                class="kakao_ad_area"
+                style="display: none;"
+                data-ad-unit="DAN-cZXsHmvuwnNmmCce"
+                data-ad-width="320"
+                data-ad-height="100"
+            ></ins>
+            <script
+                type="text/javascript"
+                src="//t1.daumcdn.net/kas/static/ba.min.js"
+                async
+            ></script>
+        </div>
 
         <script
             class="jsbin"
@@ -116,6 +146,32 @@
         </div>
 
         <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+        
+         <!-- Modal -->
+    <div class="modal fade" id="adModal" tabindex="-1" role="dialog" aria-labelledby="adModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="adModalLabel">(AD)광고 - 재시도를 한번 더 눌러주세요.</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body d-flex justify-content-center">
+                    <ins class="kakao_ad_area" style="display:none;" 
+ data-ad-unit    = "DAN-6a1nNm7ea5ohuVF1" 
+ data-ad-width   = "300" 
+ data-ad-height  = "250"></ins>
+                </div>
+                <div class="modal-footer d-flex justify-content-center">
+                    <button type="button p-2" class="try-again-btn" onclick="gaReload2();">
+                        <span class="try-again-text">다른 사진으로 재시도</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+        
         <script>
             function gaReload1() {
                 gtag('event', '다른 사진으로 재시도 1차', {
@@ -216,17 +272,44 @@
                 console.log(prediction[0].className);
                 var resultMessage;
                 switch (prediction[0].className) {
-                    case 'shinwol':
+                    case '신월':
                         resultMessage = '신월입니다';
                         break;
-                    case 'evoni':
+                    case '에보니':
                         resultMessage = '에보니입니다';
                         break;
-                    case 'baekmodan':
+                    case '백모단':
                         resultMessage = '백모단입니다';
                         break;
-                    case 'youngrak':
+                    case '영락':
                         resultMessage = '영락입니다';
+                        break;
+                    case '루페스트리':
+                        resultMessage = '루페스트리';
+                        break;
+                    case '블루엘프':
+                        resultMessage = '블루엘프';
+                        break;
+                    case '방울복랑':
+                        resultMessage = '방울복랑';
+                        break;
+                    case '모닝듀':
+                        resultMessage = '모닝듀';
+                        break;
+                    case '애성':
+                        resultMessage = '애성';
+                        break;
+                    case '희성':
+                        resultMessage = '희성';
+                        break;
+                    case '적귀성':
+                        resultMessage = '적귀성';
+                        break;
+                    case '수연':
+                        resultMessage = '수연';
+                        break;
+                    case '화제':
+                        resultMessage = '화제';
                         break;
                     default:
                         resultMessage = '다시시도하세요';
@@ -287,4 +370,6 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. -->
+
+    <!-- 조코딩 유튜브 참고하여 제작 -->
 </html>
